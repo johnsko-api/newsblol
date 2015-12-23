@@ -1,0 +1,193 @@
+<!-- <% @articles.each do |article| %>
+  <a href="/articles/<%=article.id%>">
+<li>
+  <%= article.title %>
+  <%= image_tag article.image.url(:square) %>
+</li>
+<% end %> -->
+
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foundation 5</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
+<link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+<nav class="top-bar" data-topbar>
+<ul class="title-area">
+
+<li class="name">
+<h1>
+<a href="#">
+Top Bar Title
+</a>
+</h1>
+</li>
+<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+</ul>
+<section class="top-bar-section">
+
+<ul class="right">
+<li class="divider"></li>
+<li class="has-dropdown">
+<a href="#">Main Item 1</a>
+<ul class="dropdown">
+<li><label>Section Name</label></li>
+<li class="has-dropdown">
+<a href="#" class="">Has Dropdown, Level 1</a>
+<ul class="dropdown">
+<li><a href="#">Dropdown Options</a></li>
+<li><a href="#">Dropdown Options</a></li>
+<li><a href="#">Level 2</a></li>
+<li><a href="#">Subdropdown Option</a></li>
+<li><a href="#">Subdropdown Option</a></li>
+<li><a href="#">Subdropdown Option</a></li>
+</ul>
+</li>
+<li><a href="#">Dropdown Option</a></li>
+<li><a href="#">Dropdown Option</a></li>
+<li class="divider"></li>
+<li><label>Section Name</label></li>
+<li><a href="#">Dropdown Option</a></li>
+<li><a href="#">Dropdown Option</a></li>
+<li><a href="#">Dropdown Option</a></li>
+<li class="divider"></li>
+<li><a href="#">See all &rarr;</a></li>
+</ul>
+</li>
+<li class="divider"></li>
+<li><a href="#">Main Item 2</a></li>
+<li class="divider"></li>
+<li class="has-dropdown">
+<a href="#">Main Item 3</a>
+<ul class="dropdown">
+<li><a href="#">Dropdown Option</a></li>
+<li><a href="#">Dropdown Option</a></li>
+<li><a href="#">Dropdown Option</a></li>
+<li class="divider"></li>
+<li><a href="#">See all &rarr;</a></li>
+</ul>
+</li>
+</ul>
+</section>
+</nav>
+
+
+<div class="row">
+
+<div class="large-9 columns">
+<h3>Get in Touch!</h3>
+<p>We'd love to hear from you. You can either reach out to us as a whole and one of our awesome team members will get back to you, or if you have a specific question reach out to one of our staff. We love getting email all day <em>all day</em>.</p>
+<div class="section-container tabs" data-section>
+<section class="section">
+<h5 class="title"><a href="#panel1">Contact Our Company</a></h5>
+<div class="content" data-slug="panel1">
+<form>
+<div class="row collapse">
+<div class="large-2 columns">
+<label class="inline">Your Name</label>
+</div>
+<div class="large-10 columns">
+<input type="text" id="yourName" placeholder="Jane Smith">
+</div>
+</div>
+<div class="row collapse">
+<div class="large-2 columns">
+<label class="inline"> Your Email</label>
+</div>
+<div class="large-10 columns">
+<input type="text" id="yourEmail" placeholder="jane@smithco.com">
+</div>
+</div>
+<label>What's up?</label>
+<textarea rows="4"></textarea>
+<button type="submit" class="radius button">Submit</button>
+</form>
+</div>
+</section>
+<section class="section">
+<h5 class="title"><a href="#panel2">Specific Person</a></h5>
+<div class="content" data-slug="panel2">
+<ul class="large-block-grid-5">
+<li><a href="/cdn-cgi/l/email-protection#d9b4b8b599aabcabbcb7b0ada0f7bbbaf7abbcbb"><img src="http://placehold.it/200x200&amp;text=[person]">Mal Reynolds</a></li>
+<li><a href="/cdn-cgi/l/email-protection#e993868ca99a8c9b8c87809d90c78b8ac79b8c8b"><img src="http://placehold.it/200x200&amp;text=[person]">Zoe Washburne</a></li>
+<li><a href="/cdn-cgi/l/email-protection#7c161d0512193c0f190e1912150805521e1f520e191e"><img src="http://placehold.it/200x200&amp;text=[person]">Jayne Cobb</a></li>
+<li><a href="/cdn-cgi/l/email-protection#cbafa4a88bb8aeb9aea5a2bfb2e5a9a8e5b9aea9"><img src="http://placehold.it/200x200&amp;text=[person]">Simon Tam</a></li>
+<li><a href="/cdn-cgi/l/email-protection#ec878580809583999b859884819581858288ac9f899e8982859895c28e8fc29e898e"><img src="http://placehold.it/200x200&amp;text=[person]">River Tam</a></li>
+<li><a href="/cdn-cgi/l/email-protection#c0aca5a1a6afaeb4a8a5b7a9aea480b3a5b2a5aea9b4b9eea2a3eeb2a5a2"><img src="http://placehold.it/200x200&amp;text=[person]">Hoban Washburne</a></li>
+<li><a href="/cdn-cgi/l/email-protection#dfbdb0b0b49facbaadbab1b6aba6f1bdbcf1adbabd"><img src="http://placehold.it/200x200&amp;text=[person]">Shepherd Book</a></li>
+<li><a href="/cdn-cgi/l/email-protection#b6dddad3d3f6c5d3c4d3d8dfc2cf98d4d598c4d3d4"><img src="http://placehold.it/200x200&amp;text=[person]">Kaywinnet Lee Fry</a></li>
+<li><a href="/cdn-cgi/l/email-protection#c1a8afa0b3a081a6b4a8ada5efa2aeacb1efa0adad"><img src="http://placehold.it/200x200&amp;text=[person]">Inarra Serra</a></li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+
+
+<div class="large-3 columns">
+<h5>Map</h5>
+
+<p>
+<a href="" data-reveal-id="mapModal"><img src="http://placehold.it/400x280"></a><br/>
+<a href="" data-reveal-id="mapModal">View Map</a>
+</p>
+<p>
+123 Awesome St.<br/>
+Barsoom, MA 95155
+</p>
+</div>
+
+</div>
+
+
+<footer class="row">
+<div class="large-12 columns">
+<hr/>
+<div class="row">
+<div class="large-6 columns">
+<p>&copy; Copyright no one at all. Go to town.</p>
+</div>
+<div class="large-6 columns">
+<ul class="inline-list right">
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+<li><a href="#">Link 4</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+
+<div class="reveal-modal" id="mapModal">
+<h4>Where We Are</h4>
+<p><img src="http://placehold.it/800x600"/></p>
+
+<a href="#" class="close-reveal-modal">&times;</a>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script>//<![CDATA[
+document.write('<script src="//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1"><\/script>')
+//]]></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>

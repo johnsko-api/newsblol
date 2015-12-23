@@ -1,0 +1,6 @@
+<h1> Welcome to the Admin page </h1>
+  <li><%= link_to "Create New Article", new_admin_article_path %></li>
+
+<% @articles.each do |article| %>
+<li><a href="/admin/articles/<%= article.id %>/edit/"><%= article.title %></li>
+<% end %>
